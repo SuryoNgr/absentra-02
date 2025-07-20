@@ -1,0 +1,118 @@
+.client-container {
+    padding: 20px;
+    background: url('/images/bg-pattern.png'); /* opsional: tambahkan background grid jika ada */
+}
+
+.add-button {
+    background-color: #3366cc;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 10px;;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* FLEXBOX untuk center isi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button span {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 6px;
+}
+
+.add-button:hover {
+    background-color: #254a99;
+}
+
+
+
+
+.client-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.client-table th {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px;
+}
+
+.client-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.client-table a {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.client-table a:hover {
+    text-decoration: underline;
+}
+.client-table td a {
+    font-size: 1rem;
+    margin-right: 8px;
+    text-decoration: none;
+    justify-content: center;
+}
+.action-buttons{
+    display: flex;
+    gap: 10px;
+}
+.client-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.client-table th, 
+.client-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;  /* center horizontal */
+    vertical-align: middle;  /* center vertical */
+}
+
+.client-table th {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.client-table td.action-buttons {
+    display: flex;
+    justify-content: center;  /* center horizontal */
+    align-items: center;      /* center vertical */
+    gap: 10px;                /* jarak antar icon */
+}
+.client-container form {
+    margin-bottom: 15px;
+}
+
+.client-container h3 {
+    margin-top: 20px;
+    color: #3b5998;
+}
+
+.client-container form,
+.client-container a.add-button {
+    vertical-align: middle;
+}
+
+.client-container input[type="file"] {
+    margin-right: 5px;
+}
+
+
+

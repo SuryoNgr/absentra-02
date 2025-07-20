@@ -1,0 +1,50 @@
+.client-container {
+    padding: 20px;
+    background: #ffffff; /* atau #f4f6f8 atau warna netral lainnya */
+    border-radius: 8px;
+}
+
+
+.client-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.client-container form div {
+    margin-bottom: 15px;
+}
+
+.client-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3b5998; /* Warna biru seperti tabel header */
+}
+
+.client-container input[type="text"],
+.client-container input[type="email"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.client-container input[type="text"]:focus,
+.client-container input[type="email"]:focus {
+    border-color: #3b5998;
+    outline: none;
+}
+
+.client-container button {
+    background-color: #3366cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.client-container button:hover {
+    background-color: #274b8a;
+}

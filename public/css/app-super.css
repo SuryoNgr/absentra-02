@@ -1,0 +1,153 @@
+/* =================== SIDEBAR & NAVBAR =================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #2d3748;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #3182ce 0%, #2c5aa0 100%);
+    color: white;
+    padding: 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 75px;
+    height: 75%;
+}
+
+.sidebar-menu {
+    padding: 20px 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-right: 3px solid white;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+/* Navbar */
+.top-bar {
+    background: white;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.breadcrumb {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background: #3182ce;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ========== SUBMENU DROPDOWN ========== */
+.submenu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.1); /* menyatu dengan sidebar */
+    padding-left: 40px;
+    transition: all 0.3s ease;
+}
+
+.menu-item.has-dropdown {
+    position: relative;
+    justify-content: space-between;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    margin-left: auto;
+}
+
+/* Item submenu */
+.submenu-item {
+    display: block;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    transition: background 0.3s, color 0.3s;
+    border-left: 2px solid transparent;
+}
+
+.submenu-item:hover,
+.submenu-item.active {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 2px solid #ffffff;
+    font-weight: 500;
+}
+
